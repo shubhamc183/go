@@ -22,3 +22,27 @@ Learn Go Programming - Golang Tutorial for Beginners: https://www.youtube.com/wa
 ### Running go code
 - go run src/path/to/code/Main.go
 - go build path/to/code/ to package under bin/ folder
+
+### Go Features
+- Singe binary file o/p
+- Can't declare unused vars
+- Very strict on operation with different Primitive types
+
+### Primitives
+- Bool
+- Numberic
+  - Integers
+    - Signed, Unsigned
+    - int, int8, int32
+  - Floating
+  - Complex
+- Text String
+  - String
+    - UTF-8
+    - Immutable
+    - Can be concatenated with plus (+)
+    - Can be converted to []byte
+  - Rune
+    - UTF-32
+    - Alias for int32
+    - Special methods normally requires to process
