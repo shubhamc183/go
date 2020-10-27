@@ -46,3 +46,41 @@ Learn Go Programming - Golang Tutorial for Beginners: https://www.youtube.com/wa
     - UTF-32
     - Alias for int32
     - Special methods normally requires to process
+
+### Constants
+- Constants
+  - Immutable
+  - Assigned at compile time, must be present at that time
+  - Implicit type conversion works
+  - Can be defined in block
+- Enurated constants
+  - ```iota``` starts at 0 in each const block and increment by one
+
+### Collections
+- Arrays
+  - Collection of items with same types
+  - Fixed Size
+  - call by value & reference
+- Slices
+  - Backed by array, it also have same type of array
+  - ```a := []int{10, 20, 30}```
+  - Size & capacity based
+  - Always call by refrence
+  - a = append(a, 10)
+  - a = append(a, 10, 20, 30)
+  - a = append(a, b...) // spreador
+  - **DANGEROUS, a will be changed use loops**
+    - ```b = append(a[:2], a[4:]...)```
+- Make funtion
+  - ```make(type, size)```, cap becomes size
+  - ```make(type, size, cap)```
+- Maps
+  - Pass by refrence
+  - always return something like 0, check with ok
+  - ```value, ok = myMap["wrongKey"]```
+- Structs
+  - Collection of different types of data
+  - Keyed by name
+  - Can be passed by value & reference
+  - No inheritance, but embedding possible
+  - Tags can be fields of struct to provide metadata
