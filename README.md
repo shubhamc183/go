@@ -75,7 +75,7 @@ Learn Go Programming - Golang Tutorial for Beginners: https://www.youtube.com/wa
   - ```make(type, size)```, cap becomes size
   - ```make(type, size, cap)```
 - Maps
-  - Pass by refrence
+  - **ALWAYS Pass by refrence***
   - always return something like 0, check with ok
   - ```value, ok = myMap["wrongKey"]```
 - Structs
